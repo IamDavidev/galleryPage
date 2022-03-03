@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"target": "ES6",
+		"baseUrl": "src",
+		"paths": {
+			"components": ["src"],
+			"carpeta/*": ["src"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}
