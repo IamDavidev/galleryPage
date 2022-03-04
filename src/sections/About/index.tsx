@@ -2,22 +2,15 @@ import { FC } from 'react';
 import usePhotoRandom from '../../hooks/usePhotoRanom';
 import styles from './about.module.scss';
 
-interface photoContent {
-	urls?: {
-		regular: string;
-	};
-}
-
 const About: FC = () => {
-	const photo: photoContent = usePhotoRandom();
-	console.log(photo);
-	// TO DO : use swr to get the photo
+	const Dataphoto: any = usePhotoRandom({ count: 1 });
+	const photo = Dataphoto[0];
 	return (
 		<>
 			<section className={styles.AboutPage}>
 				<article className={styles.aboutContent}>
 					<div className={styles.aboutText}>
-						<h1>Sobre</h1>
+						<h1>About</h1>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem
 							velit aliquam, excepturi facere expedita accusamus qui porro vero
@@ -33,7 +26,7 @@ const About: FC = () => {
 						</p>
 					</div>
 					<picture className={styles.imgAbout}>
-						<img src={photo?.urls?.regular} alt='' />
+						<img src={photo?.urls?.regular} alt='SobreImage' />
 					</picture>
 				</article>
 			</section>

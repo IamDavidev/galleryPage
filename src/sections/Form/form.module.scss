@@ -1,0 +1,72 @@
+.form {
+	margin: 5rem 10rem;
+	margin-top: 10rem;
+	background-color: var(--color-text);
+	padding: 3rem;
+	color: var(--color-black);
+	box-shadow: 0px 14px 20px 0px #000;
+	.contentForm {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		.imgForm {
+			position: absolute;
+			top: -130px;
+			img {
+				min-width: 400px;
+				min-height: 450px;
+				max-width: 400px;
+				max-height: 450px;
+				box-shadow: 0px 14px 20px 0px #000;
+			}
+		}
+		.renderForm {
+			margin-left: 50%;
+			position: relative;
+			right: -350px;
+			form {
+				.titleForm {
+					margin-bottom: 1rem;
+					font-size: 2rem;
+					font-weight: bold;
+					letter-spacing: 0.5rem;
+				}
+				.formInputs {
+					display: flex;
+					input {
+						margin: 1rem;
+						border: none;
+						padding: 1rem;
+						border-bottom: 1px solid var(--color-primary);
+						background-color: transparent;
+						color: var(--color-primary);
+						&::placeholder {
+							color: var(--color-black);
+						}
+						&:focus {
+							outline: none;
+						}
+					}
+				}
+				span {
+					font-size: 1rem;
+					font-weight: bold;
+				}
+				textarea {
+					margin: 1rem;
+					border: none;
+					padding: 1rem;
+					border-bottom: 1px solid var(--color-primary);
+					background-color: transparent;
+					min-width: 400px;
+					min-height: 100px;
+					max-width: 400px;
+					max-height: 100px;
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+		}
+	}
+}

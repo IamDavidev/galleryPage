@@ -2,12 +2,18 @@ import { useState, useEffect } from 'react';
 
 import getPhotoRandom from '../services/getPhotoRandom';
 
-const usePhotoRandom = () => {
-	const [data, setData] = useState({});
+const usePhotoRandom = ({
+	count,
+	query,
+}: {
+	count: number;
+	query?: string;
+}) => {
+	const [data, setData] = useState([]);
 
 	useEffect(() => {
-		getPhotoRandom().then(res => setData(res));
-	}, []);
+		getPhotoRandom({ count, query }).then(res => setData(res));
+	}, [count]);
 
 	return data;
 };

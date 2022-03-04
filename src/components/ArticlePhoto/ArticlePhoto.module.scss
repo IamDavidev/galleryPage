@@ -1,0 +1,32 @@
+.containerTrending {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 1rem;
+	.titleTrending {
+		font-size: 1.5rem;
+		border-bottom: 1px solid var(--color-secondary);
+		margin-bottom: 1rem;
+	}
+	.pictureTrending {
+		box-shadow: -14px -14px 8px 0px var(--color-primary);
+		.imgPicture {
+			min-width: 300px;
+			max-width: 300px;
+			min-height: 250px;
+			max-height: 250px;
+			object-fit: cover;
+		}
+	}
+	.btnTrending {
+		margin: 1rem 0;
+		background-color: transparent;
+		border: none;
+		color: var(--color-secondary);
+		a {
+			color: var(--color-primary);
+			text-decoration: none;
+		}
+	}
+}
