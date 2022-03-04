@@ -5,7 +5,9 @@ const HeaderPage = () => {
 		<>
 			<section className={styles.headerPage}>
 				<div className={styles.title}>
-					<h1>DavGallery</h1>
+					<h1>
+						<a href='#gallery'>DavGallery</a>
+					</h1>
 				</div>
 				<picture className={styles.imgHeader}>
 					<img src='/src/assets/headerImg.jpg' alt='headerImageItsDavidev' />

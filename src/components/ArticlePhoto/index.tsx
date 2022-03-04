@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import usePhotoRandom from '../../hooks/usePhotoRanom';
+import BtnRedirect from '../BtnRedirect';
 import styles from './ArticlePhoto.module.scss';
 
 const ArtclePhoto: FC = () => {
@@ -21,11 +22,7 @@ const ArtclePhoto: FC = () => {
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, eum.
 					Quidem id dolorem praesentium blanditiis?
 				</p>
-				<button className={styles.btnTrending}>
-					<a href='#' target='_blank'>
-						more <span> {'>'} </span>
-					</a>
-				</button>
+				<BtnRedirect link={'me'} />
 			</div>
 		</>
 	);

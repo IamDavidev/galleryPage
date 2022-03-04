@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import BtnRedirect from '../../components/BtnRedirect';
 import usePhotoRandom from '../../hooks/usePhotoRanom';
 import styles from './about.module.scss';
 
@@ -24,6 +25,7 @@ const About: FC = () => {
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
 							cupiditate maxime deleniti similique distinctio asperiores!
 						</p>
+						<BtnRedirect link={'me'} />
 					</div>
 					<picture className={styles.imgAbout}>
 						<img src={photo?.urls?.regular} alt='SobreImage' />

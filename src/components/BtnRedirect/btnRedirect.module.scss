@@ -1,0 +1,10 @@
+.btnRedirect {
+	background-color: transparent;
+	border: 2px solid var(--color-primary);
+	padding: 1rem;
+	margin: 0.5rem;
+	a {
+		color: var(--color-black);
+		text-decoration: none;
+	}
+}
