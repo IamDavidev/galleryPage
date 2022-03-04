@@ -4,7 +4,7 @@ import usePhotoRandom from '../../hooks/usePhotoRanom';
 import styles from './about.module.scss';
 
 const About: FC = () => {
-	const Dataphoto: any = usePhotoRandom({ count: 1 });
+	const Dataphoto: any = usePhotoRandom({ count: 1, query: 'black' });
 	const photo = Dataphoto[0];
 	return (
 		<>

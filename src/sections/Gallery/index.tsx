@@ -4,7 +4,7 @@ import usePhotoRandom from '../../hooks/usePhotoRanom';
 import styles from './gallery.module.scss';
 
 const Gallery: FC = () => {
-	const photos: any = usePhotoRandom({ count: 7 });
+	const photos: any = usePhotoRandom({ count: 7, query: 'night' });
 	return (
 		<>
 			<div className={styles.contentGallery} id='gallery'>

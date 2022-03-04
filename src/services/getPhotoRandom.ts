@@ -1,6 +1,4 @@
-const KEY_API: string = `
-6t-ZtDGcWoOMOHDoJ8mAoPQAt4hUSgTrE4dJQx3wdj4
-`;
+const KEY_API: string = `981MOvmLDapoheL-Z9ElWT-RvDlsC0k38qVoNELs_ng`;
 
 const getPhotoRandom = async ({
 	count,
