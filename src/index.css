@@ -17,6 +17,7 @@
 
 html,
 body {
+	scroll-behavior: smooth;
 	color: #000;
 	display: flex;
 	flex-direction: column;

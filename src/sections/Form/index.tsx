@@ -30,8 +30,13 @@ const FormSection = () => {
 								/>
 							</label>
 							<label>
-								<span>Message :</span>
-								<textarea name='message' id='formMessage' cols={40} rows={5} />
+								<textarea
+									name='message'
+									id='formMessage'
+									cols={40}
+									rows={5}
+									placeholder='Message'
+								/>
 							</label>
 						</form>
 					</div>
