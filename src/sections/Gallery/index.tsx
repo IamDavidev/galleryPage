@@ -1,10 +1,11 @@
 import { FC } from 'react';
 import BtnRedirect from '../../components/BtnRedirect';
 import usePhotoRandom from '../../hooks/usePhotoRanom';
+import { typeDataPhoto } from '../../types/types';
 import styles from './gallery.module.scss';
 
 const Gallery: FC = () => {
-	const photos: any = usePhotoRandom({ count: 7, query: 'night' });
+	const photos: typeDataPhoto = usePhotoRandom({ count: 7, query: 'night' });
 	return (
 		<>
 			<div className={styles.contentGallery} id='gallery'>

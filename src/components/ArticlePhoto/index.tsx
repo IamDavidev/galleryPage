@@ -1,12 +1,14 @@
 import { FC } from 'react';
 import usePhotoRandom from '../../hooks/usePhotoRanom';
+import { photoType, typeDataPhoto } from '../../types/types';
 import BtnRedirect from '../BtnRedirect';
 import styles from './ArticlePhoto.module.scss';
 
 const ArtclePhoto: FC = () => {
-	const Dataphoto: any = usePhotoRandom({ count: 6 });
+	const Dataphoto: typeDataPhoto = usePhotoRandom({ count: 6 });
 	const postion = Math.floor(Math.random() * 6);
-	const photo: any = Dataphoto[postion];
+	const photo: photoType = Dataphoto[postion];
+	console.log(Dataphoto);
 	return (
 		<>
 			<div className={styles.containerTrending}>

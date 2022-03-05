@@ -1,15 +1,16 @@
 import usePhotoRandom from '../../hooks/usePhotoRanom';
+import { photoType, typeDataPhoto } from '../../types/types';
 import styles from './form.module.scss';
 
 const FormSection = () => {
-	const dataPhoto = usePhotoRandom({ count: 1, query: 'dark' });
-	const photo: any = dataPhoto[0];
+	const dataPhoto: typeDataPhoto = usePhotoRandom({ count: 1, query: 'dark' });
+	const photo: photoType = dataPhoto[0];
 	return (
 		<>
 			<section className={styles.form}>
 				<article className={styles.contentForm}>
 					<picture className={styles.imgForm}>
-						<img src={photo?.urls.small} alt='formImage' />
+						<img src={photo?.urls?.small} alt='formImage' />
 					</picture>
 					<div className={styles.renderForm}>
 						<form>

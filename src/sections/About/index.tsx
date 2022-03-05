@@ -1,11 +1,12 @@
 import { FC } from 'react';
 import BtnRedirect from '../../components/BtnRedirect';
 import usePhotoRandom from '../../hooks/usePhotoRanom';
+import { photoType, typeDataPhoto } from '../../types/types';
 import styles from './about.module.scss';
 
 const About: FC = () => {
-	const Dataphoto: any = usePhotoRandom({ count: 1, query: 'black' });
-	const photo = Dataphoto[0];
+	const Dataphoto: typeDataPhoto = usePhotoRandom({ count: 1, query: 'black' });
+	const photo: photoType = Dataphoto[0];
 	return (
 		<>
 			<section className={styles.AboutPage}>
