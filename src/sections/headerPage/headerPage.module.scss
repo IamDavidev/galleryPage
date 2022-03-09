@@ -33,6 +33,7 @@
 	.imgHeader {
 		img {
 			width: 100%;
+			min-height: 500px;
 			max-height: 100vh;
 			object-fit: cover;
 		}
@@ -45,5 +46,16 @@
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 1024px) {
+	.headerPage {
+		.title {
+			padding: 1rem;
+			h1 {
+				font-size: 2rem;
+			}
+		}
 	}
 }

@@ -21,10 +21,6 @@
 	picture {
 		img {
 			box-shadow: 0px 14px 20px 0px #000;
-			// width: 300px;
-			// height: 400px;
-			// max-width: 300px;
-			// max-height: 400px;
 			margin: 1rem;
 			object-fit: fill;
 		}
@@ -37,4 +33,19 @@
 	align-items: center;
 	margin: 0 auto;
 	margin-top: 1rem;
+}
+
+@media (min-width: 300px) and (max-width: 1024px) {
+	.renderImages {
+		margin: 0;
+		padding: 0;
+		picture {
+			img {
+				margin: 0 1rem;
+			}
+		}
+	}
+	.pictureImage {
+		padding: 1rem 0;
+	}
 }

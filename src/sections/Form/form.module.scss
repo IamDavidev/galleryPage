@@ -75,3 +75,46 @@
 		}
 	}
 }
+
+@media (min-width: 300px) and (max-width: 1024px) {
+	.form {
+		margin: 3rem 0;
+		width: 100%;
+		.contentForm {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			.imgForm {
+				display: none;
+				img {
+					max-width: 400px;
+					min-height: 450px;
+					box-shadow: 0px 14px 20px 0px #000;
+				}
+			}
+			.renderForm {
+				position: initial;
+				margin-left: 0;
+				form {
+					.titleForm {
+						width: 100%;
+						margin: 0;
+						padding: 0;
+					}
+					.formInputs {
+						flex-direction: column;
+					}
+					textarea {
+						margin: 0;
+						padding: 0;
+
+						min-width: 100%;
+						min-height: 100px;
+						max-width: 100%;
+						max-height: 100px;
+					}
+				}
+			}
+		}
+	}
+}
